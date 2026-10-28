@@ -743,3 +743,18 @@ body:not(.admin-enabled) .admin-column { display: none !important; }
   .modal-actions { flex-direction: column-reverse; }
   .modal-actions .button { width: 100%; }
 }
+
+
+.loading-spinner {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid rgba(255, 255, 255, .35);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
